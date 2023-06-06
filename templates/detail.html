@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Detail View
+{% endblock %}
+
+{% block body %}
+    <a href="{% url 'feed:index' %}">&larr; Back</a><br>
+    {{ object }}
+    <img src='{{ object.image.url}}' style="width:100%; height:auto;">
+{% endblock %}
